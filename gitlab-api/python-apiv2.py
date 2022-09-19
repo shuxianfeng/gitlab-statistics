@@ -22,7 +22,7 @@ def get_gitlab(t1, t2):
 
                     com = project.commits.get(commit.id)
 
-                    if com.stats["total"] > 5000:  # 单次提交大于5000行的代码，可能是脚手架之类生成的代码，不做处理
+                    if com.stats["total"] > 8000:  # 单次提交大于8000行的代码，可能是脚手架之类生成的代码，不做处理
                         continue
 
                     pro={}
